@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body class="bg-[#8169FF]">
+    <div class="py-4 px-5 mx-auto w-full  flex justify-between items-center transition-all  duration-1000 bg-[]  fixed top-0 left-0 "
+        id="navbar">
+        <div class="flex items-center text-[#F7F5FF] font-medium tracking-widest px-3 ">
+            <h1>LOGO</h1>
+        </div>
+        <div class="flex justify-around items-center gap-16 text-[#F7F5FF] font-medium tracking-widest ">
+            <p>Overview</p>
+            <p>Reviews</p>
+            <p>Features</p>
+            <p>Pricing</p>
+        </div>
+        <button
+            class=" border-[#8169FF] bg-[#8169FF] rounded-full text-nowrap px-3 mx-2 flex items-center justify-between  py-2 gap-2 h-fulltext-[#0E0D1D] font-medium tracking-widest "
+            id="button">Try For Free <img src="Vector.png" alt="" class="w-[16px] text-2xl "></button>
+
+    </div>
+    <div class="text-[#0E0D1D] h-96">
+    </div>
+    <div class="text-[#0E0D1D] h-96">
+    </div>
+    <div class="text-[#0E0D1D] h-96">
+         
+    </div>
+    <div class="text-[#0E0D1D] h-96">
+    </div>
+
+    <script>
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 10) {
+                navbar.classList.add('scale-90', 'w-3/5', 'left-1/2', '-translate-x-1/2', 'top-[51px]', 'rounded-s-full', 'rounded-e-[2px]','bg-black');
+            } else {
+                navbar.classList.remove('scale-90', 'w-3/5', 'left-1/2', '-translate-x-1/2', 'top-[51px]', 'rounded-s-full', 'rounded-e-[2px]','bg-black');
+            }
+        });
+    </script>
+
+
+
+</body>
+
+</html>
